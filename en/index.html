@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+<style>
+	#box1{
+		display: none;
+	}	
+    #box1 div a{  
+        cursor: pointer;  
+        transition: all 0.6s;  
+    }  
+    #box1 div a:hover{  
+        transform: scale(1.2);
+    } 
+	#music{
+		width: 60px;
+		height: 60px;
+		margin-top: 590px;
+		margin-left: 20px;
+		position: absolute;
+	}
+	#audio-btn{
+		width: 60px;
+		height: 60px;
+		background-size: 100% 100%;
+		position: absolute;
+	}
+	#music .on{
+		width: 55px;
+		height: 55px;
+		background:url("images/喇叭1.png") no-repeat 0 0;
+	}
+	#music .off{
+		width: 55px;
+		height: 55px;
+		background: url("images/喇叭2.png") no-repeat 0 0;
+	}
+	#development1{
+		width: 931px;
+		height: 644px;
+		background-image: url("images/发展历程.jpg");
+		position: absolute;
+		display: none;
+	}
+	#plan1{
+		width: 931px;
+		height: 644px;
+		background-image: url("images/丝路蓝图.jpg");
+		position: absolute;
+		display: none;
+	}	
+	#cooperation1{
+		width: 931px;
+		height: 644px;
+		background-image: url("images/合作重点.jpg");
+		position: absolute;
+		display: none;
+	}	
+	#guangxi1{
+		width: 931px;
+		height: 644px;
+		background-image: url("images/广西丝绸.jpg");
+		position: absolute;
+		display: none;
+	}	
+	#influence1{
+		width: 931px;
+		height: 644px;
+		background-image: url("images/影响意义.jpg");
+		position: absolute;
+		display: none;
+	}	
+	#message1{
+		width: 931px;
+		height: 644px;
+		background-image: url("images/留言板.jpg");
+		position: absolute;
+		display: none;
+	}
+	#readme{
+		background-image: url("images/read me1.png");
+		width: 160px;
+		height: 75px;
+		margin: 0;
+		position: absolute;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="a">
+			<div id="box1">
+				<img src="images/首页.jpg" style="z-index: -1;position: absolute;width: 100%;height: 100%; repeat: no-repeat">
+					<div>
+						<a href="../第十一届readme组一带一路——丝路·追梦.doc" id="readme">
+						</a>
+					</div>
+					<div><a href="../index.html" class="ch">	</a></div>
+					<div><a href="#" class="en">	</a></div>
+					
+					<div><a href="development.html" target="_blank"  class="development" onmouseenter="display(1)" onmouseout="disappear()">	</a></div>
+					<div id="development1"></div>
+					
+					<div>	<a href="plan.html" target="_blank"  class="plan" onmouseenter="display(2)" onmouseout="disappear()"></a></div>
+					<div id="plan1"></div>
+					
+					<div><a href="cooperation.html" target="_blank"  class="cooperation" onmouseenter="display(3)" onmouseout="disappear()">	</a></div>
+					<div id="cooperation1"></div>
+					
+					<div><a href="guangxi.html" target="_blank"  class="guangxi" onmouseenter="display(4)" onmouseout="disappear()">	</a></div>
+					<div id="guangxi1"></div>
+					
+					<div><a href="influence.html" target="_blank"  class="influence" onmouseenter="display(5)" onmouseout="disappear()">	</a></div>
+					<div id="influence1"></div>
+					
+					<div><a href="message.php" target="_blank"  class="message" onmouseenter="display(6)" onmouseout="disappear()">	</a></div>
+					<div id="message1"></div>
+					
+					<div id="music">
+						<div id="audio-btn" style="position: absolute;" class="on" onclick="music.changeClass(this,'media')">
+						<audio loop src="../F.Be.I - 落微.mp3" id="media" preload="preload"></audio>
+						</div>
+					</div>
+		</div>
+	</div>
+<div>	
+<script>
+var music =  {
+	changeClass: function (target,id) {
+       	var className = $(target).attr("class");
+       	var ids = document.getElementById(id);
+       	(className == "on")
+           	? $(target).removeClass("on").addClass("off")
+           	: $(target).removeClass("off").addClass("on");
+       	(className == "on")
+           	? ids.pause()
+           	: ids.play();
+   	},
+	play:function(){
+		document.getElementById("media").play();
+	}
+}
+music.play();
+
+</script>
+
+<!--	</div>-->
+</body>
+	<script type="text/javascript">
+          var userAgent = navigator.userAgent,
+          rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+          rFirefox = /(firefox)\/([\w.]+)/,
+          rOpera = /(opera).+version\/([\w.]+)/,
+          rChrome = /(chrome)\/([\w.]+)/,
+          rSafari = /version\/([\w.]+).*(safari)/;
+          var browser;
+          var version;
+          var ua = userAgent.toLowerCase();
+          var s = window.screen.width;
+          function uaMatch(ua) {
+              var match = rMsie.exec(ua);
+              if (match != null) {
+
+              }
+              var match = rFirefox.exec(ua);
+              if (match != null) {
+                  setInterval(function () {
+                     
+                  })
+              }
+
+              var match = rChrome.exec(ua);
+              if (match != null) {
+                  setInterval(function () {
+
+                      if (s < 1100) {
+                          $("body").css('zoom', '0.7');
+                      }
+                      if (s < 1600 && s > 1110) {
+
+                          $("body").css('zoom', '0.85');
+                      }
+                      if (s > 1602) {
+
+                          $("body").css('zoom', '0.95');
+                      }
+                  })
+              }
+              if (match != null) {
+              }
+          }
+//		 
+          var browserMatch = uaMatch(userAgent.toLowerCase());
+//          if (browserMatch.browser) {
+//              browser = browserMatch.browser;
+//              version = browserMatch.version;
+//          }
+//		  $('.image').fadeOut(9000);
+		
+/*fade in*/
+		  setTimeout(function (){ $("#box1").fadeIn(3000);},0);
+//		  $("#box1").css("display","block");
+//		 $(".deveopment").animate({right:200},6000);
+/*图片更换*/
+		function display(pos){
+			if (pos==1)
+				$("#development1").fadeIn(1000);
+			else if(pos==2)
+				$("#plan1").fadeIn(1000);
+			else if(pos==3)
+				$("#cooperation1").fadeIn(1000);
+			else if(pos==4)
+				$("#guangxi1").fadeIn(1000);
+			else if(pos==5)
+				$("#influence1").fadeIn(1000);
+			else
+				$('#message1').fadeIn(1000);
+//			document.getElementById("development1").style.display="block";
+  		}
+  		function disappear(){
+			
+				$("#development1").fadeOut(200);
+			
+				$("#plan1").fadeOut(200);
+			
+				$("#cooperation1").fadeOut(200);
+			
+				$("#guangxi1").fadeOut(200);
+			
+				$("#influence1").fadeOut(200);
+			
+				$('#message1').fadeOut(200);
+//	  		document.getElementById("development1").style.display="none";
+  }
+</script>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>plan</title>
+
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link type="text/css" rel="stylesheet" href="css/slide_1.css">
+	<link type="text/css" rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+    <link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/pop-up-gallery1.css" rel="stylesheet" type="text/css" />
+    <style>
+		.return{
+			width: 107px;
+			height: 95px;
+			position: fixed;
+			right: 1em;
+			bottom: 70px;
+			border-radius: 5px;
+			z-index: 1000;
+		}
+	</style>
+	<script type="text/javascript">
+			  var userAgent = navigator.userAgent,
+			  rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+			  rFirefox = /(firefox)\/([\w.]+)/,
+			  rOpera = /(opera).+version\/([\w.]+)/,
+			  rChrome = /(chrome)\/([\w.]+)/,
+			  rSafari = /version\/([\w.]+).*(safari)/;
+			  var browser;
+			  var version;
+			  var ua = userAgent.toLowerCase();
+			  var s = window.screen.width;
+			  function uaMatch(ua) {
+				  var match = rMsie.exec(ua);
+				  if (match != null) {
+
+				  }
+				  var match = rFirefox.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+					  })
+				  }
+
+				  var match = rChrome.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+						  if (s < 1100) {
+							  $("body").css('zoom', '0.7');
+						  }
+						  if (s < 1600 && s > 1110) {
+
+							  $("body").css('zoom', '0.85');
+						  }
+						  if (s > 1602) {
+
+							  $("body").css('zoom', '0.95');
+						  }
+					  })
+				  }
+				  if (match != null) {
+				  }
+			  }
+			  var browserMatch = uaMatch(userAgent.toLowerCase());
+			  if (browserMatch.browser) {
+				  browser = browserMatch.browser;
+				  version = browserMatch.version;
+			  }
+			  document.write(browser + version);
+	</script>	
+
+</head>
+<body class="bg_img">
+	<div class="body_container4">
+		<div class="header-container">
+		<!--head 开始-->
+		<div class="banner-box">
+
+		</div>
+		<div style="width:100%; margin-top:50px;"><div class="navBar1">
+		  <ul class="nav clearfix">
+		    <li id="m1" class="m">
+		      <h2 style="margin-right:15px">Home</h2>
+		      <h3 style="margin-right:15px"><a href="index.html" target="_blank"><font face="微软雅黑">首页</font></a></h3>
+		      <ul class="sub bg1">
+		        <a href="index.html"  target="_blank"></a>
+		      </ul>
+		    </li>
+		    <li id="m2" class="m">
+		      <h2 style="margin-right:7px">Development</h2>
+		      <h3 style="margin-right:7px"><a href="development.html" >发展历程</a></h3>
+		      <ul class="sub bg2">
+		        <a href="development.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m3" class="m">
+		      <h2 style="margin-left:0px">Cooperation</h2>
+		      <h3 style="margin-left:0px"><a href="cooperation.html"  >合作重点</a></h3>
+		      <ul class="sub bg3">
+		        <a href="cooperation.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m4" class="m">
+		      <h2 style="margin-left:8px">Influence</h2>
+		      <h3 style="margin-left:8px"><a href="influence.html"  >影响意义</a></h3>
+		      <ul class="sub bg4">
+		        <a href="influence.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m5" class="m">
+		      <h2 style="margin-left:16px">Plan</h2>
+		      <h3 style="margin-left:16px"><a href="plan.html"  >丝路蓝图</a></h3>
+		      <ul class="sub bg5">
+		        <a href="plan.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m6" class="m">
+		      <h2 style="margin-left:21px">Guangxi</h2>
+		      <h3 style="margin-left:21px"><a href="guangxi.html"  >桂电丝绸</a></h3>
+		      <ul class="sub bg6">
+		        <a href="guangxi.html"  ></a>
+		      </ul>
+		    </li>
+		     <li id="m7" class="m">
+		      <h2 style="margin-left:35px">Message</h2>
+		      <h3 style="margin-left:35px"><a href="message.php"  >留言板</a></h3>
+		      <ul class="sub bg7">
+		        <a href="message.php"  ></a>
+		      </ul>
+		    </li>
+		  </ul>
+			</div></div></div>
+			<!-- header 结束-->
+		<script type="text/javascript">
+				jQuery(".nav").slide({ 
+						type:"menu", //效果类型
+						titCell:".m", // 鼠标触发对象
+						targetCell:".sub", // 效果对象，必须被titCell包含
+						delayTime:300, // 效果时间
+						triggerTime:0, //鼠标延迟触发时间
+						returnDefault:false  //返回默认状态
+					});
+		</script>
+		<!-- 幻灯片展示代码部分begin -->
+		<div class="container">
+			<div class="sljm-header">
+				<span class="part-sljm-leftline"></span>
+				<div class="sljm-container">
+				</div>	
+				<span class="part-sljm-rightline"></span>	
+			</div>
+			<div class="pictureSlider picture-main" data-setting='{"width":900,"height":270,"pictureWidth":640,"pictureHeight":270,"scale":0.8,"autoPlay":true,"delay":2000,"speed":300}'>
+				<div class="picture-btn picture-prev-btn"></div>
+				<ul class="picture-list">
+					<li class="picture-item"><a href="#"><img src="images/01.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/02.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/03.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/04.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/05.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/06.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/07.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/08.jpeg" width="100%" height="100%"></a></li>
+					<li class="picture-item"><a href="#"><img src="images/09.jpeg" width="100%" height="100%"></a></li>
+				</ul>
+				<div class="picture-btn picture-next-btn"></div>
+			</div>
+		</div>
+		<script src="js/slide.js"></script>
+		<script>
+		$(function(){
+			Carousel.init($(".pictureSlider"));
+		});
+		</script>
+        <!--		 幻灯片代码部分end -->
+		<div class="container2">
+			<div id="fullscreen">
+				<div id="fullscreen-inner">
+					<div id="fullscreen-inner-left" class="fullscreen-inner-button"><span class="icon-caret-left"></span></div>
+					<div id="fullscreen-inner-right" class="fullscreen-inner-button"><span class="icon-caret-right"></span></div>
+					<div id="fullscreen-inner-close" class="fullscreen-inner-button"><span class="icon-close"></span></div>
+					<div id="fullscreen-image"></div>
+				</div>
+			</div>
+			<div id="wrapper">
+				<div id="wrapper-inner">
+					<div class="wrapper-inner-title">战略规划</div>
+					<div class="wrapper-inner-content">
+						<div class="wrapper-inner-content-image">
+							<img src="images/greece1.jpg"/>
+							<img src="images/greece2.jpg"/>
+							<img src="images/greece3.jpg"/>
+							<img src="images/greece4.jpg"/>  
+							<div class="wrapper-inner-content-image-hover">
+								<div class="wrapper-inner-content-image-hover-cercle">
+									<span class="icon-search"></span>
+								</div>
+							</div>
+						</div>
+						<div class="wrapper-inner-content-text" style="margin-left:35px;">
+						  <p>根据“一带一路”走向，陆上依托国际大通道，以沿线中心城市为支撑，以重点经贸产业园区为合作平台，共同打造新亚欧大陆桥、中蒙俄、中国－中亚－西亚、中国－中南半岛等国际经济合作走廊；海上以重点港口为节点，共同建设通畅安全高效的运输大通道。中巴、孟中印缅两个经济走廊与推进“一带一路”建设关联紧密，要进一步推动合作，取得更大进展。</p>
+						  <p>“一带一路”建设是沿线各国开放合作的宏大经济愿景，需各国携手努力，朝着互利互惠、共同安全的目标相向而行。努力实现区域基础设施更加完善，安全高效的陆海空通道网络基本形成，互联互通达到新水平；投资贸易便利化水平进一步提升，高标准自由贸易区网络基本形成，经济联系更加紧密，政治互信更加深入；人文交流更加广泛深入，不同文明互鉴共荣，各国人民相知相交、和平友好。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/pop-up-gallery1.js"></script>
+
+		</div>
+	<!--footer 底部开始 -->
+	<div class="footer">
+		<p><a href="about.html" style="">关于我们</a></p>
+		<p>Copyright © 2017-2027. All Rights Reserved. 桂林电子科技大学第5组 版权所有</p>
+	</div>
+	<!--footer 底部结束 -->
+	</div>
+	<div class="return">
+	<a href="javascript:scroll(0,0)"><img src="images/影响·蓝图与留言板页.png"></a>
+	</div>
+</body>
+</html>

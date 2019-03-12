@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>development</title>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js" ></script>
+	<script type="text/javascript" src="js/colorbox.js"></script>
+	<script type="text/javascript" src="js/timeliner.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" href="css/development.css">	
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/colorbox.css" type="text/css" media="screen">
+	<style>
+		.return{
+			width: 107px;
+			height: 95px;
+			position: fixed;
+			right: 1em;
+			bottom: 70px;
+			border-radius: 5px;
+			z-index: 1000;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+          var userAgent = navigator.userAgent,
+          rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+          rFirefox = /(firefox)\/([\w.]+)/,
+          rOpera = /(opera).+version\/([\w.]+)/,
+          rChrome = /(chrome)\/([\w.]+)/,
+          rSafari = /version\/([\w.]+).*(safari)/;
+          var browser;
+          var version;
+          var ua = userAgent.toLowerCase();
+          var s = window.screen.width;
+          function uaMatch(ua) {
+              var match = rMsie.exec(ua);
+              if (match != null) {
+
+              }
+              var match = rFirefox.exec(ua);
+              if (match != null) {
+                  setInterval(function () {
+                     
+                  })
+              }
+
+              var match = rChrome.exec(ua);
+              if (match != null) {
+                  setInterval(function () {
+
+                      if (s < 1100) {
+                          $("body").css('zoom', '0.7');
+                      }
+                      if (s < 1600 && s > 1110) {
+
+                          $("body").css('zoom', '0.85');
+                      }
+                      if (s > 1602) {
+
+                          $("body").css('zoom', '0.95');
+                      }
+                  })
+              }
+              if (match != null) {
+              }
+          }
+          var browserMatch = uaMatch(userAgent.toLowerCase());
+          if (browserMatch.browser) {
+              browser = browserMatch.browser;
+              version = browserMatch.version;
+          }
+          document.write(browser + version);
+</script>
+
+<body class="bg_img">
+<div class="body_container1">
+
+	<!--head 开始-->
+	<div class="header-container">
+		<div class="banner-box">
+
+		</div>
+		<div style="width:100%; margin-top:50px;"><div class="navBar1">
+		  <ul class="nav clearfix">
+		    <li id="m1" class="m">
+		      <h2 style="margin-right:15px">首页</h2>
+		      <h3 style="margin-right:15px"><a href="index.html" target="_blank"><font face="微软雅黑">Home</font></a></h3>
+		      <ul class="sub bg1">
+		        <a href="index.html"  target="_blank"></a>
+		      </ul>
+		    </li>
+		    <li id="m2" class="m">
+		      <h2 style="margin-right:7px">发展历程</h2>
+		      <h3 style="margin-right:7px"><a href="development.html" >Development</a></h3>
+		      <ul class="sub bg2">
+		        <a href="development.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m3" class="m">
+		      <h2 style="margin-left:0px">合作重点</h2>
+		      <h3 style="margin-left:0px"><a href="cooperation.html"  >Cooperation</a></h3>
+		      <ul class="sub bg3">
+		        <a href="cooperation.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m4" class="m">
+		      <h2 style="margin-left:8px">影响意义</h2>
+		      <h3 style="margin-left:8px"><a href="influence.html"  >Influence</a></h3>
+		      <ul class="sub bg4">
+		        <a href="influence.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m5" class="m">
+		      <h2 style="margin-left:16px">丝路蓝图</h2>
+		      <h3 style="margin-left:16px"><a href="plan.html"  >Plan</a></h3>
+		      <ul class="sub bg5">
+		        <a href="plan.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m6" class="m">
+		      <h2 style="margin-left:21px">广西丝绸</h2>
+		      <h3 style="margin-left:21px"><a href="guangxi.html"  >Guangxi</a></h3>
+		      <ul class="sub bg6">
+		        <a href="guangxi.html"  ></a>
+		      </ul>
+		    </li>
+		     <li id="m7" class="m">
+		      <h2 style="margin-left:35px">留言板</h2>
+		      <h3 style="margin-left:35px"><a href="message.php"  >Message</a></h3>
+		      <ul class="sub bg7">
+		        <a href="message.php"  ></a>
+		      </ul>
+		    </li>
+		  </ul>
+		</div></div>
+		<!-- header 结束-->
+	</div>
+
+	<!--tab 开始 -->
+	<div class="tab-container">
+		<div class="sljm-header">
+			<span class="part-sljm-leftline"></span>
+			<div class="sljm-container">
+			</div>	
+			<span class="part-sljm-rightline"></span>	
+		</div>
+
+		<div class="tabs-basic">
+	        <ul>
+	            <li>
+	                <a class="tab-active" data-index="0" href="#">Stage I</a>
+	                <span class="tabs-basic-line tab-line"></span>
+	            </li>
+	            <li>
+	                <a data-index="1" href="#">Stage II</a>
+	            </li>
+	            <li>
+	                <a data-index="2" href="#">Stage III</a>
+	            </li>
+	        </ul>
+	        <div class="tabs-content-placeholder">
+
+	            <div class="tab-content-active">
+	                <p>&emsp;&emsp;After Zhang Qian visit the western region, the Han dynasty began to move the control of the western region. In 60 BC, the Han dynasty was established as a direct jurisdiction of the western region. Marked by the establishment of officials in the western region of the Han dynasty, the silk road began to enter the era of prosperity.</p>
+	                <img src="images/bahnhoff.jpg" alt="Banhoff">
+	            </div>
+
+	            <div>
+	                <p>&emsp;&emsp;The Tang dynasty, the Chinese government to borrow to break down the Turkic，and the establishment of four Garrisons as an institution of the Chinese government control of the Tianshan north road of silk road line,bringing the commercial road back to its heyday.</p>
+	                <img src="images/colosseum.jpg" alt="Colosseum">
+	            </div>
+
+	            <div>
+	                <p>&emsp;&emsp;China's new silk road initiative (One Belt And One Road) will benefit the entire Eurasian continent and even the continent.</p>
+	                <img src="images/sands-of-life.jpg" alt="Sands of Life">
+	            </div>
+
+	        </div>
+
+	    </div>
+
+
+		<div class="tabs-colorful-icons">
+
+		        <ul>
+		            <li>
+		                <a class="first-tab tab-active" data-index="0" href="#">Related reports</a>
+		                <span class="tabs-colorful-line tab-line"></span>
+		            </li>
+		        </ul>
+
+		        <div class="tabs-content-placeholder">
+		            <ul>
+		            	<li><a href="article/article-1.html">Globalization upgraded "One Belt And One Road"...</a></li> 
+		            	<li><a href="article/article-2.html">China and "The Belt And Road" countries along ...</a></li>   		
+		            	<li><a href="article/article-3.html">Professor Nolan of Cambridge university: "The ...</a></li>   		
+		            	<li><a href="article/article-4.html">What is One Belt And One Road? This is the most...</a></li>   		
+		            	<li><a href="article/article-5.html">"One Belt And One Road" is the grand project of...</a></l>	            	
+		            	<li><a href="article/article-6.html">Palestinian President mahmoud abbas: Pakistan ...</a></li>   
+		            	<li><a href="article/article-7.html">China - ASEAN expo will set up a "One Belt And ...</a></li> 
+		            	<li><a href="article/article-8.html">Guangxi advanced manufacturing industry "One...</a></li> 		      
+		            </ul>
+		        </div>
+		    </div>		    
+	</div>
+
+	<!-- history开始 -->
+	<div class="history-container">
+		<h2 class="scjs-margin-top"><span class="history-line tab-line"></span></h2>
+		<div id="timelineContainer" class="timelineContainer">
+
+			<div class="timelineToggle"><p><a class="expandAll">+ 全部展开</a></p></div>
+
+			<br class="clear">
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>138 BC</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19540517"><a>Zhang Qian</a></dt>
+					<dd class="timelineEvent" id="19540517EX" style="display:none;">
+						<h3>Zhang Qian's first mission to the western regions</h3>
+						<p>To unite the western regions against the Huns.</p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>119 BC</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19550828"><a>Zhang Qian</a></dt>
+					<dd class="timelineEvent" id="19550828EX" style="display:none;">
+						<h3>Zhang Qian went to the western regions for the second time.</h3>
+						<p>At this time, the Huns had been defeated by the Han Dynasty, and the western regions had also rid themselves of the rule of the Huns. The purpose of the mission was to promote the economic and cultural exchanges and friendly exchanges between the Han Dynasty and the western regions.</p>
+
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+
+				
+				<dl class="timelineMinor">
+					<dt id="19551201"><a> </a></dt> <!-- 去掉一个-->
+					<dd class="timelineEvent" id="19551201EX" style="display:none;">
+						<h3></h3>
+						<p></p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>60 BC</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19570904"><a>Xuan Emperor in the Han Dynasty</a></dt>
+					<dd class="timelineEvent" id="19570904EX" style="display:none;">
+						<h3>Set up the western region</h3>
+						<p>In order to strengthen the control of the western region and the establishment of the western region, Xuan Emperor in the Han Dynasty set up the western region in order to strengthen the control of the western region.</p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>97 BC</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19610504"><a>Ban Chao</a></dt>
+					<dd class="timelineEvent" id="19610504EX" style="display:none;">
+						<h3>Reopening of the Silk Road</h3>
+					<p>In the Han Dynasty reestablished the dominant position in Central Asia after the reopening of the Silk Road, Paiganying carrying large amounts of silk to Daqin (Rome Empire), Gansu Branch (now the Spanish Middle East Iraq), to the  West Circle   (present-day Persian Gulf).</p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+			<br class="clear">
+		</div>
+	</div>
+
+<script>
+	$(document).ready(function() {
+		$.timeliner({
+			startOpen:['#19550828EX', '#19630828EX','#19540517EX','#19570904EX','#19570904EX','#19610504EX']
+		});
+		$.timeliner({
+			timelineContainer: '#timelineContainer_2'
+		});
+		// Colorbox Modal
+		$(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+	});
+</script>
+
+
+	<script>
+        $(document).ready(function() {
+
+            var widget = $('.tabs-basic');
+
+            var tabs = widget.find('ul a'),
+                content = widget.find('.tabs-content-placeholder > div');
+
+            	tabs.on('click', function (e) {
+
+                e.preventDefault();
+
+                var index = $(this).data('index');
+
+                tabs.removeClass('tab-active');
+                content.removeClass('tab-content-active');
+
+                $(this).addClass('tab-active');
+                content.eq(index).addClass('tab-content-active');
+
+            });
+
+        });
+
+    </script>
+    <!-- 导航栏 -->
+	<script type="text/javascript">
+			jQuery(".nav").slide({ 
+					type:"menu", //效果类型
+					titCell:".m", // 鼠标触发对象
+					targetCell:".sub", // 效果对象，必须被titCell包含
+					delayTime:300, // 效果时间
+					triggerTime:0, //鼠标延迟触发时间
+					returnDefault:false  //返回默认状态
+				});
+	</script>
+	<!--footer 底部开始 -->
+	<div class="footer">
+		<p><a href="about.html" style="">About Us</a></p>
+		<p>Copyright  2017-2027.GUET group of XX All Rights Reserved.</p>
+	</div>
+	<!--footer 底部结束 -->
+
+	<div class="return">
+	<a href="javascript:scroll(0,0)"><img src="images/发展与合作页.png"></a>
+	</div>
+</div>	
+</body>
+</html>

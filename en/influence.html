@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Influence</title>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" href="css/tuxiao.css" type="text/css" media="screen">
+	<script type="text/javascript">
+			  var userAgent = navigator.userAgent,
+			  rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+			  rFirefox = /(firefox)\/([\w.]+)/,
+			  rOpera = /(opera).+version\/([\w.]+)/,
+			  rChrome = /(chrome)\/([\w.]+)/,
+			  rSafari = /version\/([\w.]+).*(safari)/;
+			  var browser;
+			  var version;
+			  var ua = userAgent.toLowerCase();
+			  var s = window.screen.width;
+			  function uaMatch(ua) {
+				  var match = rMsie.exec(ua);
+				  if (match != null) {
+
+				  }
+				  var match = rFirefox.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+					  })
+				  }
+
+				  var match = rChrome.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+						  if (s < 1100) {
+							  $("body").css('zoom', '0.7');
+						  }
+						  if (s < 1600 && s > 1110) {
+
+							  $("body").css('zoom', '0.85');
+						  }
+						  if (s > 1602) {
+
+							  $("body").css('zoom', '0.95');
+						  }
+					  })
+				  }
+				  if (match != null) {
+				  }
+			  }
+			  var browserMatch = uaMatch(userAgent.toLowerCase());
+			  if (browserMatch.browser) {
+				  browser = browserMatch.browser;
+				  version = browserMatch.version;
+			  }
+			  document.write(browser + version);
+	</script>	
+	<style>
+		.return{
+			width: 107px;
+			height: 95px;
+			position: fixed;
+			right: 1em;
+			bottom: 70px;
+			border-radius: 5px;
+			z-index: 1000;
+		}
+	</style>
+</head>
+
+<body class="bg_img">
+		<div class="body_container3">
+				<!--head 开始-->
+	<div class="header-container">
+		<div class="banner-box">
+
+		</div>
+		<div style="width:100%; margin-top:50px;"><div class="navBar1">
+		  <ul class="nav clearfix">
+		    <li id="m1" class="m">
+		      <h2 style="margin-right:15px">首页</h2>
+		      <h3 style="margin-right:15px"><a href="index.html" target="_blank"><font face="微软雅黑">Home</font></a></h3>
+		      <ul class="sub bg1">
+		        <a href="index.html"  target="_blank"></a>
+		      </ul>
+		    </li>
+		    <li id="m2" class="m">
+		      <h2 style="margin-right:7px">发展历程</h2>
+		      <h3 style="margin-right:7px"><a href="development.html" >Development</a></h3>
+		      <ul class="sub bg2">
+		        <a href="development.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m3" class="m">
+		      <h2 style="margin-left:0px">合作重点</h2>
+		      <h3 style="margin-left:0px"><a href="cooperation.html"  >Cooperation</a></h3>
+		      <ul class="sub bg3">
+		        <a href="cooperation.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m4" class="m">
+		      <h2 style="margin-left:8px">影响意义</h2>
+		      <h3 style="margin-left:8px"><a href="influence.html"  >Influence</a></h3>
+		      <ul class="sub bg4">
+		        <a href="influence.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m5" class="m">
+		      <h2 style="margin-left:16px">丝路蓝图</h2>
+		      <h3 style="margin-left:16px"><a href="plan.html"  >Plan</a></h3>
+		      <ul class="sub bg5">
+		        <a href="plan.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m6" class="m">
+		      <h2 style="margin-left:21px">广西丝绸</h2>
+		      <h3 style="margin-left:21px"><a href="guangxi.html"  >Guangxi</a></h3>
+		      <ul class="sub bg6">
+		        <a href="guangxi.html"  ></a>
+		      </ul>
+		    </li>
+		     <li id="m7" class="m">
+		      <h2 style="margin-left:35px">留言板</h2>
+		      <h3 style="margin-left:35px"><a href="message.php"  >Message</a></h3>
+		      <ul class="sub bg7">
+		        <a href="message.php"  ></a>
+		      </ul>
+		    </li>
+		  </ul>
+		</div></div>
+				<!-- header 结束-->
+			</div>
+
+			<script>
+				<!-- 导航栏 -->
+				$(document).ready(function() {
+
+					var widget = $('.tabs-basic');
+
+					var tabs = widget.find('ul a'),
+						content = widget.find('.tabs-content-placeholder > div');
+
+						tabs.on('click', function (e) {
+
+						e.preventDefault();
+
+						var index = $(this).data('index');
+
+						tabs.removeClass('tab-active');
+						content.removeClass('tab-content-active');
+
+						$(this).addClass('tab-active');
+						content.eq(index).addClass('tab-content-active');
+
+					});
+
+				});
+			</script>
+			<script type="text/javascript">
+					jQuery(".nav").slide({ 
+							type:"menu", //效果类型
+							titCell:".m", // 鼠标触发对象
+							targetCell:".sub", // 效果对象，必须被titCell包含
+							delayTime:300, // 效果时间
+							triggerTime:0, //鼠标延迟触发时间
+							returnDefault:false  //返回默认状态
+						});
+			</script>
+<!--	图效1-->
+	<ul class="tu1">
+	  	<div class="slsg-header">
+			<span class="part-leftline"></span>
+			<div class="slsg2-container">
+			</div>	
+			<span class="part-rightline"></span>	
+		</div>
+	  <li>
+		<div class="shape"> <a href="#" class="overlay round"></a>
+			<div class="details"> <span class="heading">Mutual benefit and win-win progress make a community of Shared future</span>
+			<hr />
+			<p>"The Belt and Road" is the road of mutual benefit and win-win results, in the area under the framework of all the way, the world could usher in a wave of new economy, the economic tide, will "neighbourhood" all the way to build the road to peace, caused strong repercussions in the whole world.</p>
+			</div>
+			  <div class="bg"></div>
+			  <div class="base"> <img src="images/1.jpg" alt="" /> </div>
+			</div>
+	  </li>
+		  <li>
+		<div class="shape"> <a href="#" class="overlay hexagon"></a>
+			<div class="details"> <span class="heading">China brand day 500 ankai passenger cars export Myanmar</span>
+			<hr />
+			<p>"The Belt and Road" international cooperation peak BBS, back to see  "The Belt and Road" of a few years, this important initiative to quickly get international society wide attention and positive response, and formed a large number of emerging opportunities.</p>
+			</div>
+			  <div class="bg"></div>
+			  <div class="base"> <img src="images/2.jpg" alt="" /> </div>
+			</div>
+	  </li>
+		  <li>
+		<div class="shape"> <a href="#" class="overlay pentagon"></a>
+			<div class="details"> <span class="heading">China-Kazakhstan energy cooperation </span>
+			<hr />
+			<p>The construction and operation of china-Kazakhstan oil and gas pipelines usher in a new historic opportunity and the people of the two countries actually enjoy the fruits of cooperation. While benefiting China's hundreds of millions of people, china-Kazakhstan energy cooperation has provided strong support for the social and economic development and improving people's livelihood.</p>
+			</div>
+			  <div class="bg"></div>
+			  <div class="base"> <img src="images/3.jpg" alt="" /> </div>
+			</div>
+	  </li>
+	 </ul>
+	 
+<!--	图效2-->
+	<div class="htmleaf-container">
+		<div class="slsg-header">
+            <span class="part-slsg-leftline"></span>
+            <div class="slsg-container">
+            </div>  
+            <span class="part-slsg-rightline"></span>   
+        </div>
+
+		<div class="tabs-underline">
+		    <ul>
+		            <li>
+		                <a data-index="0" href="#">Explore the economic path</a>
+		            </li>
+		            <li>
+		                <a class="tab-active" data-index="1" href="#">Rebalance the global economy</a>
+		            </li>
+		            <li>
+		                <a data-index="2" href="#">Create new regional cooperation</a>
+		            </li>
+			</ul>
+		        <div class="tabs-content-placeholder">
+		            <div>
+		                <p>&emsp;&emsp;"the Belt and Road" is in the era of financial crisis, as the world's economic growth engine of China, its production capacity, technology and capital advantages, experience and patterns into the market and the cooperation advantages, implement a great innovation of all-around opening up. Through "the Belt and Road", we will share China's reform and development dividend and China's development experience and lessons. China will work hard to promote cooperation and dialogue among countries along the belt and road, and build a new global development partnership that is more equal and balanced to consolidate the foundation for long-term and stable development of the world economy.</p>
+		                <img src="images/item-1.jpg" width="378" alt="Colosseum">
+		            </div>
+
+		            <div class="tab-content-active">
+		                <p>&emsp;&emsp;The traditional globalization is caused by the sea, which is born from the sea. The coastal regions and maritime countries develop first, and the land countries and the inland regions lag behind, forming a huge gap between rich and poor. Carry forward traditional globalization from Europe, from America, form a "dilemma" of the international order, cause from belong to the west, the east rural to urban, from land belongs to the sea and a series of unreasonable imbalance effect. Now, One Belt And One Road is pushing global rebalancing."One Belt And One Road" encourages opening up to the west, driving the development of the western region and the development of landlocked countries and regions such as central Asia and Mongolia.</p>
+		                <img src="images/item-2.jpg" width="378" alt="Banhoff">
+		            </div>
+
+		            <div>
+		                <p>&emsp;&emsp;China's reform and opening up is the world's biggest innovation, "The Belt And  Road" as a strategy, all-round opening to the outside are on economic corridor theory, economy theory, international cooperation theory innovation in the 21st century economic development theory, regional cooperation theory, globalization theory. "The Belt And  Road" emphasizes to discuss, and sharing principle, beyond the Marshall plan, foreign aid, and walk out strategy, bring new ideas to international cooperation in the 21st century "Economic zone" concept, for example, is the innovation of regional economic cooperation pattern, in which economic corridor - economic corridor between China and Russia, the new Asia-Europe continental bridge.</p>
+		                <img src="images/item-3.jpg" width="378" alt="Sahale Wa">
+		            </div>
+		        </div>
+		    </div>
+	</div>
+	
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script>
+        $(document).ready(function() {
+            var widget = $('.tabs-underline');
+            var tabs = widget.find('ul a'),
+                content = widget.find('.tabs-content-placeholder > div');
+            tabs.on('click', function (e) {
+                e.preventDefault();
+                var index = $(this).data('index');
+                tabs.removeClass('tab-active');
+                content.removeClass('tab-content-active');
+                $(this).addClass('tab-active');
+                content.eq(index).addClass('tab-content-active');
+            });
+        });
+    </script>
+    <!--footer 底部开始 -->
+	<div class="footer">
+		<p><a href="about.html" style="">About Us</a></p>
+		<p>Copyright © 2017-2027.GUET group of XX All Rights Reserved.</p>
+	</div>
+	<!--footer 底部结束 -->
+		</div>	
+	<div class="return">
+	<a href="javascript:scroll(0,0)"><img src="images/影响·蓝图与留言板页.png"></a>
+	</div>
+</body>
+</html>

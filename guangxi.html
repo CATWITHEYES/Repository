@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>guet</title>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js" ></script>
+	<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+	<script type="text/javascript" src="js/qie.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/guet.css">
+	<style>
+		.return{
+			width: 199px;
+			height: 158px;
+			position: fixed;
+			right: 1em;
+			bottom: 35px;
+			border-radius: 5px;
+			z-index: 1000;
+		}
+	</style>
+	<script type="text/javascript">
+			  var userAgent = navigator.userAgent,
+			  rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+			  rFirefox = /(firefox)\/([\w.]+)/,
+			  rOpera = /(opera).+version\/([\w.]+)/,
+			  rChrome = /(chrome)\/([\w.]+)/,
+			  rSafari = /version\/([\w.]+).*(safari)/;
+			  var browser;
+			  var version;
+			  var ua = userAgent.toLowerCase();
+			  var s = window.screen.width;
+			  function uaMatch(ua) {
+				  var match = rMsie.exec(ua);
+				  if (match != null) {
+
+				  }
+				  var match = rFirefox.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+					  })
+				  }
+
+				  var match = rChrome.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+						  if (s < 1100) {
+							  $("body").css('zoom', '0.7');
+						  }
+						  if (s < 1600 && s > 1110) {
+
+							  $("body").css('zoom', '0.85');
+						  }
+						  if (s > 1602) {
+
+							  $("body").css('zoom', '0.95');
+						  }
+					  })
+				  }
+				  if (match != null) {
+				  }
+			  }
+			  var browserMatch = uaMatch(userAgent.toLowerCase());
+			  if (browserMatch.browser) {
+				  browser = browserMatch.browser;
+				  version = browserMatch.version;
+			  }
+			  document.write(browser + version);
+	</script>
+
+</head>
+<body class="bg_img">
+<div class="body_container5">
+	<!--head 开始-->
+	<div class="header-container">
+		<div class="banner-box">
+
+		</div>
+		<div style="width:100%; margin-top:50px;"><div class="navBar1">
+		  <ul class="nav clearfix">
+		    <li id="m1" class="m">
+		      <h2 style="margin-right:15px">Home</h2>
+		      <h3 style="margin-right:15px"><a href="index.html" target="_blank"><font face="微软雅黑">首页</font></a></h3>
+		      <ul class="sub bg1">
+		        <a href="index.html"  target="_blank"></a>
+		      </ul>
+		    </li>
+		    <li id="m2" class="m">
+		      <h2 style="margin-right:7px">Development</h2>
+		      <h3 style="margin-right:7px"><a href="development.html" >发展历程</a></h3>
+		      <ul class="sub bg2">
+		        <a href="development.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m3" class="m">
+		      <h2 style="margin-left:0px">Cooperation</h2>
+		      <h3 style="margin-left:0px"><a href="cooperation.html"  >合作重点</a></h3>
+		      <ul class="sub bg3">
+		        <a href="cooperation.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m4" class="m">
+		      <h2 style="margin-left:8px">Influence</h2>
+		      <h3 style="margin-left:8px"><a href="influence.html"  >影响意义</a></h3>
+		      <ul class="sub bg4">
+		        <a href="influence.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m5" class="m">
+		      <h2 style="margin-left:16px">Plan</h2>
+		      <h3 style="margin-left:16px"><a href="plan.html"  >丝路蓝图</a></h3>
+		      <ul class="sub bg5">
+		        <a href="plan.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m6" class="m">
+		      <h2 style="margin-left:21px">GuangXi</h2>
+		      <h3 style="margin-left:21px"><a href="guet.html"  >广西丝绸</a></h3>
+		      <ul class="sub bg6">
+		        <a href="guet.html"  ></a>
+		      </ul>
+		    </li>
+		     <li id="m7" class="m">
+		      <h2 style="margin-left:35px">Message</h2>
+		      <h3 style="margin-left:35px"><a href="message.php"  >留言板</a></h3>
+		      <ul class="sub bg7">
+		        <a href="message.php"  ></a>
+		      </ul>
+		    </li>
+		  </ul>
+		</div></div>
+		<!-- header 结束-->
+	</div>
+	<!-- 导航栏 -->
+	<script type="text/javascript">
+			jQuery(".nav").slide({ 
+					type:"menu", //效果类型
+					titCell:".m", // 鼠标触发对象
+					targetCell:".sub", // 效果对象，必须被titCell包含
+					delayTime:300, // 效果时间
+					triggerTime:0, //鼠标延迟触发时间
+					returnDefault:false  //返回默认状态
+				});
+	</script>
+	<!-- banner开始 -->
+	<div class="banner-container">
+		<div class="qing bank">
+
+		  <div class="juzhong banner">
+		    <div class="main_visual">
+			  <div class="flicking_con">
+				<table border="0" cellspacing="0" cellpadding="0">
+		          <tr>
+		            <td>
+		            <a href="#">1</a><a href="#">2</a>
+		            <a href="#">3</a><a href="#">4</a>
+		            </td>
+		          </tr>
+		        </table>
+			  </div>
+			  <div class="main_image">
+				<ul>
+				<li>
+				<img src="picture/1487317728.png" width="950" height="420"></li>
+				<li>
+				<img src="picture/1499220338.jpg" width="950" height="420"></li>
+				<li><img src="picture/1484896263.jpg" width="1250" height="420"></li>
+				<li><img src="picture/1484895190.jpg" width="1250" height="420"></li>
+				</ul>
+				<a href="javascript:;" id="btn_prev"></a>
+				<a href="javascript:;" id="btn_next"></a>
+			  </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+<!--	图文-->
+	<style>
+		.gallery1{
+			width: 780px;
+			height: 300px;
+			overflow: visible;
+			position: relative;
+			margin-top: 150px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #fcfcfc;
+			float: left;
+		}
+		.gallery2{
+			width: 780px;
+			height: 300px;
+			overflow: visible;
+			position: relative;
+			margin-top: 65px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #fcfcfc;
+			float: right;
+		}
+		.gallery1 h1,.gallery2 h1{
+			left:30px;
+			width:300px;
+			height: 30px;
+			position: relative;
+		}
+		.gallery1 p,.gallery2 p{
+			left:30px;
+			margin-top:10px;
+			width:420px;
+			height: 200px;
+			position: relative;
+			font-size: 1.5em;
+		}
+		.container{
+			width: 950px;
+			height: 855px;
+			margin: 0 auto;
+		}
+	</style>
+<!--	<img src="images/tip1.png" style="width:70px;height: 50px;">-->
+	<div class="container">
+	<div class="gallery1">
+		<div style="float:left;"><img src="images/ly1.jpg"></div>
+			<div style="float:left;">
+				<h1>旅游胜地建设有新突破</h1>
+			</div>
+			<div style="float:left;">
+				<p>&emsp;&emsp;自治区党委、政府高度重视桂林国际旅游胜地建设。全区旅游发展大会于2013年在桂林市召开，自治区党委书记彭清华宣布桂林国际旅游胜地建设全面启动，并指示：桂林要加快旅游产业转型升级步伐，深化旅游文化融合发展，不断提升旅游品质和质量效益；要由过去单纯的观光旅游向休闲度假旅游转变，引入一批高端旅游项目，打造多元化旅游产品……</br>
+    			   &emsp;两年来，桂林国际旅游胜地建设有了许多新突破，创造了多个“全国第一”和该市“历史之最”。</br>
+    			   &emsp;桂林高新万达广场正式开业、桂林通航有限责任公司开航、桂林华润中心暨华润万象城在琴潭片区奠基开工……桂林与万达、海航、华润、中电科等全国知名大型企业合作，超百亿元的重大项目“落地”，为建市以来最多。
+				</p>
+			</div>
+	</div>
+	<div class="gallery2">
+	<div style="float:right;"><img src="images/ly2.jpg"></div>
+		<div style="float:left;">
+			<h1>旅游转型升级显新成效</h1>
+		</div>
+		<div style="float:left;">
+			<p>&emsp;&emsp;中国-东盟博览会旅游展永久落户桂林，是该市建设国际旅游胜地、融入“一带一路”国家战略的主动作为，这也是在“变”。</br>
+    		   &emsp;桂林旅游产业转型升级是否有成效，数据在说话：</br>
+    		   &emsp;据统计，2014年，接待境内外游客3871万人次，同比增长9%；实现旅游收入420亿元，同比增长21%；</br>
+    		   &emsp;2015年1-8月，接待境内外游客2826.3万人次，同比增长9.2%；实现旅游收入314.8亿元，同比增长20.1%；</br>
+   			   &emsp;旅游总收入增幅明显高于游客数量增幅，说明游客结构已发生积极变化，旅游转型升级成效显著。
+			</p>
+		</div>
+	</div>
+	</div>
+	
+	<!--footer 底部开始 -->
+	<div class="footer">
+		<p><a href="about.html" style="">关于我们</a></p>
+		<p>Copyright © 2017-2027. All Rights Reserved. 桂林电子科技大学第5组 版权所有</p>
+	</div>
+	<!--footer 底部结束 -->
+	</div>	
+	<div class="return">
+	<a href="javascript:scroll(0,0)"><img src="images/广西页.png"></a>
+	</div>
+</body>
+</html>

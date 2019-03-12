@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>development</title>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js" ></script>
+	<script type="text/javascript" src="js/colorbox.js"></script>
+	<script type="text/javascript" src="js/timeliner.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" href="css/development.css">	
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/colorbox.css" type="text/css" media="screen">
+	<style>
+		.return{
+			width: 107px;
+			height: 95px;
+			position: fixed;
+			right: 1em;
+			bottom: 70px;
+			border-radius: 5px;
+			z-index: 1000;
+		}
+	</style>
+</head>
+<script type="text/javascript">
+          var userAgent = navigator.userAgent,
+          rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+          rFirefox = /(firefox)\/([\w.]+)/,
+          rOpera = /(opera).+version\/([\w.]+)/,
+          rChrome = /(chrome)\/([\w.]+)/,
+          rSafari = /version\/([\w.]+).*(safari)/;
+          var browser;
+          var version;
+          var ua = userAgent.toLowerCase();
+          var s = window.screen.width;
+          function uaMatch(ua) {
+              var match = rMsie.exec(ua);
+              if (match != null) {
+
+              }
+              var match = rFirefox.exec(ua);
+              if (match != null) {
+                  setInterval(function () {
+                     
+                  })
+              }
+
+              var match = rChrome.exec(ua);
+              if (match != null) {
+                  setInterval(function () {
+
+                      if (s < 1100) {
+                          $("body").css('zoom', '0.7');
+                      }
+                      if (s < 1600 && s > 1110) {
+
+                          $("body").css('zoom', '0.85');
+                      }
+                      if (s > 1602) {
+
+                          $("body").css('zoom', '0.95');
+                      }
+                  })
+              }
+              if (match != null) {
+              }
+          }
+          var browserMatch = uaMatch(userAgent.toLowerCase());
+          if (browserMatch.browser) {
+              browser = browserMatch.browser;
+              version = browserMatch.version;
+          }
+          document.write(browser + version);
+</script>
+
+<body class="bg_img">
+<div class="body_container1">
+
+	<!--head 开始-->
+	<div class="header-container">
+		<div class="banner-box">
+
+		</div>
+		<div style="width:100%; margin-top:50px;"><div class="navBar1">
+		  <ul class="nav clearfix">
+		    <li id="m1" class="m">
+		      <h2 style="margin-right:15px">Home</h2>
+		      <h3 style="margin-right:15px"><a href="index.html" target="_blank"><font face="微软雅黑">首页</font></a></h3>
+		      <ul class="sub bg1">
+		        <a href="index.html"  target="_blank"></a>
+		      </ul>
+		    </li>
+		    <li id="m2" class="m">
+		      <h2 style="margin-right:7px">Development</h2>
+		      <h3 style="margin-right:7px"><a href="development.html" >发展历程</a></h3>
+		      <ul class="sub bg2">
+		        <a href="development.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m3" class="m">
+		      <h2 style="margin-left:0px">Cooperation</h2>
+		      <h3 style="margin-left:0px"><a href="cooperation.html"  >合作重点</a></h3>
+		      <ul class="sub bg3">
+		        <a href="cooperation.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m4" class="m">
+		      <h2 style="margin-left:8px">Influence</h2>
+		      <h3 style="margin-left:8px"><a href="influence.html"  >影响意义</a></h3>
+		      <ul class="sub bg4">
+		        <a href="influence.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m5" class="m">
+		      <h2 style="margin-left:16px">Plan</h2>
+		      <h3 style="margin-left:16px"><a href="plan.html"  >丝路蓝图</a></h3>
+		      <ul class="sub bg5">
+		        <a href="plan.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m6" class="m">
+		      <h2 style="margin-left:21px">Guangxi</h2>
+		      <h3 style="margin-left:21px"><a href="guangxi.html"  >广西丝绸</a></h3>
+		      <ul class="sub bg6">
+		        <a href="guangxi.html"  ></a>
+		      </ul>
+		    </li>
+		     <li id="m7" class="m">
+		      <h2 style="margin-left:35px">Message</h2>
+		      <h3 style="margin-left:35px"><a href="message.php"  >留言板</a></h3>
+		      <ul class="sub bg7">
+		        <a href="message.php"  ></a>
+		      </ul>
+		    </li>
+		  </ul>
+		</div></div>
+		<!-- header 结束-->
+	</div>
+
+	<!--tab 开始 -->
+	<div class="tab-container">
+		<div class="sljm-header">
+			<span class="part-sljm-leftline"></span>
+			<div class="sljm-container">
+			</div>	
+			<span class="part-sljm-rightline"></span>	
+		</div>
+
+		<div class="tabs-basic">
+	        <ul>
+	            <li>
+	                <a class="tab-active" data-index="0" href="#">第一个阶段</a>
+	                <span class="tabs-basic-line tab-line"></span>
+	            </li>
+	            <li>
+	                <a data-index="1" href="#">第二阶段</a>
+	            </li>
+	            <li>
+	                <a data-index="2" href="#">第三阶段</a>
+	            </li>
+	        </ul>
+	        <div class="tabs-content-placeholder">
+
+	            <div class="tab-content-active">
+	                <p>&emsp;&emsp;张骞出使西域后，汉朝开始策动对西域的控制。公元前60年设立了汉朝对西域的直接管辖机构——西域都护府。以汉朝在西域设立官员为标志，丝绸之路这条东西方交流之路开始进入繁荣的时代。</p>
+	                <img src="images/bahnhoff.jpg" alt="Banhoff">
+	            </div>
+
+	            <div>
+	                <p>&emsp;&emsp;唐朝时，中国政府借击破突厥的时机，一举控制西域各国，并设立安西四镇作为中国政府控制西域的机构，打通了天山北路的丝路分线，将西线打通至中亚。这一时期东罗马帝国、波斯（7世纪中叶后阿拉伯帝国取代了波斯的中亚霸权）保持了相对的稳定，令这条商路再度迎来了繁荣时期。</p>
+	                <img src="images/colosseum.jpg" alt="Colosseum">
+	            </div>
+
+	            <div>
+	                <p>&emsp;&emsp;中国倡导的新丝绸之路计划(一带一路)，将惠及整个亚欧大陆乃至非洲大陆。</p>
+	                <img src="images/sands-of-life.jpg" alt="Sands of Life">
+	            </div>
+
+	        </div>
+
+	    </div>
+
+
+		<div class="tabs-colorful-icons">
+
+		        <ul>
+		            <li>
+		                <a class="first-tab tab-active" data-index="0" href="#">相关报道</a>
+		                <span class="tabs-colorful-line tab-line"></span>
+		            </li>
+		        </ul>
+
+		        <div class="tabs-content-placeholder">
+		            <ul>
+		            	<li><a href="article/article-1.html">全球化升级 “一带一路”撬中国机器人产业支点</a></li> 
+		            	<li><a href="article/article-2.html">中国与“一带一路”沿线国家版权贸易高速增长 </a></li>   		
+		            	<li><a href="article/article-3.html">剑桥大学教授：“一带一路”为欧洲复兴提供前景</a></li>   		
+		            	<li><a href="article/article-4.html">“一带一路”到底是啥？这是我见过最详尽的图解！</a></li>   		
+		            	<li><a href="article/article-5.html">专家：“一带一路”是当代世界的一项宏伟工程  </a></l>	            	
+		            	<li><a href="article/article-6.html">总统阿巴斯：巴方希望融入“一带一路”建设 </a></li>   
+		            	<li><a href="article/article-7.html">中国-东盟博览会将设“一带一路”专题展区 </a></li> 
+		            	<li><a href="article/article-8.html">广西先进制造业借力“一带一路”加快“走出去”</a></li> 		      
+		            </ul>
+		        </div>
+		    </div>		    
+	</div>
+
+	<!-- history开始 -->
+	<div class="history-container">
+		<h2 class="scjs-margin-top"><span class="history-line tab-line"></span></h2>
+		<div id="timelineContainer" class="timelineContainer">
+
+			<div class="timelineToggle"><p><a class="expandAll">+ 全部展开</a></p></div>
+
+			<br class="clear">
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>公元前138年</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19540517"><a>张骞</a></dt>
+					<dd class="timelineEvent" id="19540517EX" style="display:none;">
+						<h3>张骞第一次出使西域</h3>
+						<p>目的是联合西域各国共同抗击匈奴。</p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>公元前119年</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19550828"><a>张骞</a></dt>
+					<dd class="timelineEvent" id="19550828EX" style="display:none;">
+						<h3>张骞第二次出使西域</h3>
+						<p>此时，匈奴已被汉朝打败，西域各国也摆脱了匈奴统治，出使西域的目的就是增进汉王朝同西域各国的经济文化交流和友好往来。</p>
+
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+
+				
+				<dl class="timelineMinor">
+					<dt id="19551201"><a> </a></dt> <!-- 去掉一个-->
+					<dd class="timelineEvent" id="19551201EX" style="display:none;">
+						<h3></h3>
+						<p></p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>公元前60年</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19570904"><a>汉宣帝</a></dt>
+					<dd class="timelineEvent" id="19570904EX" style="display:none;">
+						<h3>设立西域都护府</h3>
+						<p>出于对匈奴的不断骚扰和丝绸之路上强盗横行的状况考虑，汉朝为加强对西域的控制，设立西域都护府。</p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+
+			<div class="timelineMajor">
+				<h2 class="timelineMajorMarker"><span>公元９７年</span></h2>
+				<dl class="timelineMinor">
+					<dt id="19610504"><a>班超</a></dt>
+					<dd class="timelineEvent" id="19610504EX" style="display:none;">
+						<h3>重开丝绸之路</h3>
+					<p>在重新建立起汉朝在中亚的主导地位后，重开丝绸之路，派甘英携带大量丝织品出使大秦（罗马帝国），甘英西经条支（今中东伊拉克）、安息等国，至安息西界（今波斯湾）。</p>
+						<br class="clear">
+					</dd><!-- /.timelineEvent -->
+				</dl><!-- /.timelineMinor -->
+			</div><!-- /.timelineMajor -->
+			<br class="clear">
+		</div>
+	</div>
+
+<script>
+	$(document).ready(function() {
+		$.timeliner({
+			startOpen:['#19550828EX', '#19630828EX','#19540517EX','#19570904EX','#19570904EX','#19610504EX']
+		});
+		$.timeliner({
+			timelineContainer: '#timelineContainer_2'
+		});
+		// Colorbox Modal
+		$(".CBmodal").colorbox({inline:true, initialWidth:100, maxWidth:682, initialHeight:100, transition:"elastic",speed:750});
+	});
+</script>
+
+
+	<script>
+        $(document).ready(function() {
+
+            var widget = $('.tabs-basic');
+
+            var tabs = widget.find('ul a'),
+                content = widget.find('.tabs-content-placeholder > div');
+
+            	tabs.on('click', function (e) {
+
+                e.preventDefault();
+
+                var index = $(this).data('index');
+
+                tabs.removeClass('tab-active');
+                content.removeClass('tab-content-active');
+
+                $(this).addClass('tab-active');
+                content.eq(index).addClass('tab-content-active');
+
+            });
+
+        });
+
+    </script>
+    <!-- 导航栏 -->
+	<script type="text/javascript">
+			jQuery(".nav").slide({ 
+					type:"menu", //效果类型
+					titCell:".m", // 鼠标触发对象
+					targetCell:".sub", // 效果对象，必须被titCell包含
+					delayTime:300, // 效果时间
+					triggerTime:0, //鼠标延迟触发时间
+					returnDefault:false  //返回默认状态
+				});
+	</script>
+	<!--footer 底部开始 -->
+	<div class="footer">
+		<p><a href="about.html" style="">关于我们</a></p>
+		<p>Copyright © 2017-2027. All Rights Reserved. 桂林电子科技大学第X组 版权所有</p>
+	</div>
+	<!--footer 底部结束 -->
+
+	<div class="return">
+	<a href="javascript:scroll(0,0)"><img src="images/发展与合作页.png"></a>
+	</div>
+</div>	
+</body>
+</html>

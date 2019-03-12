@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-size: 100%;
+	background-size: cover;
+	background-color: #f9f4ee;
+}
+.container{
+	width: 1366px;
+	height: 644px;
+	margin: 0px auto;
+}
+.a{
+	width: 1366px;
+	height: 644px;
+	position: absolute;
+}
+#box1{
+	padding: 5px;
+	width: 1366px;
+	height: 644px;
+	margin: 0 auto;
+	/*position: absolute;*/
+	background-repeat: no-repeat;
+}
+.ch{
+	width: 90px;
+	height: 90px;
+	right: 255px;
+	margin-top: 24px;
+	position: absolute;
+}
+.en{
+	width: 90px;
+	height: 80px;
+	right: 104px;
+	margin-top: 24px;
+	position: absolute;
+}
+.development{
+	width: 190px;
+	height: 71px;
+	right: 210px;
+	margin-top: 140px;
+	position: absolute;
+	background-image: url("../images/发展历程.png");
+}
+.cooperation{
+	width: 190px;
+	height: 64px;
+	right: 69px;
+	margin-top: 230px;
+	position: absolute;
+	background-image: url("../images/合作重点.png");
+}
+.influence{
+	width: 190px;
+	height: 71px;
+	right: 210px;
+	margin-top: 310px;
+	position: absolute;
+	background-image: url("../images/影响意义.png");
+}
+.guangxi{
+	width: 190px;
+	height: 64px;
+	right: 69px;
+	margin-top: 400px;
+	position: absolute;
+	background-image: url("../images/广西丝绸.png");
+}
+.plan{
+	width: 190px;
+	height: 71px;
+	right: 210px;
+	margin-top: 480px;
+	position: absolute;
+	background-image: url("../images/丝路蓝图.png");
+}
+.message{
+	width: 190px;
+	height: 64px;
+	right: 69px;
+	margin-top: 570px;
+	position: absolute;
+	background-image: url("../images/留言板.png");
+}

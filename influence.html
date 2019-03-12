@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Influence</title>
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.superslide.2.1.1.js" ></script>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" href="css/tuxiao.css" type="text/css" media="screen">
+	<script type="text/javascript">
+			  var userAgent = navigator.userAgent,
+			  rMsie = /(msie\s|trident.*rv:)([\w.]+)/,
+			  rFirefox = /(firefox)\/([\w.]+)/,
+			  rOpera = /(opera).+version\/([\w.]+)/,
+			  rChrome = /(chrome)\/([\w.]+)/,
+			  rSafari = /version\/([\w.]+).*(safari)/;
+			  var browser;
+			  var version;
+			  var ua = userAgent.toLowerCase();
+			  var s = window.screen.width;
+			  function uaMatch(ua) {
+				  var match = rMsie.exec(ua);
+				  if (match != null) {
+
+				  }
+				  var match = rFirefox.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+					  })
+				  }
+
+				  var match = rChrome.exec(ua);
+				  if (match != null) {
+					  setInterval(function () {
+
+						  if (s < 1100) {
+							  $("body").css('zoom', '0.7');
+						  }
+						  if (s < 1600 && s > 1110) {
+
+							  $("body").css('zoom', '0.85');
+						  }
+						  if (s > 1602) {
+
+							  $("body").css('zoom', '0.95');
+						  }
+					  })
+				  }
+				  if (match != null) {
+				  }
+			  }
+			  var browserMatch = uaMatch(userAgent.toLowerCase());
+			  if (browserMatch.browser) {
+				  browser = browserMatch.browser;
+				  version = browserMatch.version;
+			  }
+			  document.write(browser + version);
+	</script>	
+	<style>
+		.return{
+			width: 107px;
+			height: 95px;
+			position: fixed;
+			right: 1em;
+			bottom: 70px;
+			border-radius: 5px;
+			z-index: 1000;
+		}
+	</style>
+</head>
+
+<body class="bg_img">
+		<div class="body_container3">
+				<!--head 开始-->
+	<div class="header-container">
+		<div class="banner-box">
+
+		</div>
+		<div style="width:100%; margin-top:50px;"><div class="navBar1">
+		  <ul class="nav clearfix">
+		    <li id="m1" class="m">
+		      <h2 style="margin-right:15px">Home</h2>
+		      <h3 style="margin-right:15px"><a href="index.html" target="_blank"><font face="微软雅黑">首页</font></a></h3>
+		      <ul class="sub bg1">
+		        <a href="index.html"  target="_blank"></a>
+		      </ul>
+		    </li>
+		    <li id="m2" class="m">
+		      <h2 style="margin-right:7px">Development</h2>
+		      <h3 style="margin-right:7px"><a href="development.html" >发展历程</a></h3>
+		      <ul class="sub bg2">
+		        <a href="development.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m3" class="m">
+		      <h2 style="margin-left:0px">Cooperation</h2>
+		      <h3 style="margin-left:0px"><a href="cooperation.html"  >合作重点</a></h3>
+		      <ul class="sub bg3">
+		        <a href="cooperation.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m4" class="m">
+		      <h2 style="margin-left:8px">Influence</h2>
+		      <h3 style="margin-left:8px"><a href="influence.html"  >影响意义</a></h3>
+		      <ul class="sub bg4">
+		        <a href="influence.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m5" class="m">
+		      <h2 style="margin-left:16px">Plan</h2>
+		      <h3 style="margin-left:16px"><a href="plan.html"  >丝路蓝图</a></h3>
+		      <ul class="sub bg5">
+		        <a href="plan.html"  ></a>
+		      </ul>
+		    </li>
+		    <li id="m6" class="m">
+		      <h2 style="margin-left:21px">Guangxi</h2>
+		      <h3 style="margin-left:21px"><a href="guangxi.html"  >广西丝绸</a></h3>
+		      <ul class="sub bg6">
+		        <a href="guangxi.html"  ></a>
+		      </ul>
+		    </li>
+		     <li id="m7" class="m">
+		      <h2 style="margin-left:35px">Message</h2>
+		      <h3 style="margin-left:35px"><a href="message.php"  >留言板</a></h3>
+		      <ul class="sub bg7">
+		        <a href="message.php"  ></a>
+		      </ul>
+		    </li>
+		  </ul>
+		</div></div>
+				<!-- header 结束-->
+			</div>
+
+			<script>
+				<!-- 导航栏 -->
+				$(document).ready(function() {
+
+					var widget = $('.tabs-basic');
+
+					var tabs = widget.find('ul a'),
+						content = widget.find('.tabs-content-placeholder > div');
+
+						tabs.on('click', function (e) {
+
+						e.preventDefault();
+
+						var index = $(this).data('index');
+
+						tabs.removeClass('tab-active');
+						content.removeClass('tab-content-active');
+
+						$(this).addClass('tab-active');
+						content.eq(index).addClass('tab-content-active');
+
+					});
+
+				});
+			</script>
+			<script type="text/javascript">
+					jQuery(".nav").slide({ 
+							type:"menu", //效果类型
+							titCell:".m", // 鼠标触发对象
+							targetCell:".sub", // 效果对象，必须被titCell包含
+							delayTime:300, // 效果时间
+							triggerTime:0, //鼠标延迟触发时间
+							returnDefault:false  //返回默认状态
+						});
+			</script>
+<!--	图效1-->
+	<ul class="tu1">
+	  	<div class="slsg-header">
+			<span class="part-leftline"></span>
+			<div class="slsg2-container">
+			</div>	
+			<span class="part-rightline"></span>	
+		</div>
+	  <li>
+		<div class="shape"> <a href="#" class="overlay round"></a>
+			<div class="details"> <span class="heading">互利共赢，成就全球命运共同体</span>
+			<hr />
+			<p>“一带一路”是互利共赢之路，在一带一路的框架下，全球将迎来经济新浪潮，在经济浪潮的带动下，将“一带一路”建成和平之路、繁荣之路、开放之路、创新之路、文明之路，在全世界引发强烈反响。</p>
+			</div>
+			  <div class="bg"></div>
+			  <div class="base"> <img src="images/1.jpg" alt="" /> </div>
+			</div>
+	  </li>
+		  <li>
+		<div class="shape"> <a href="#" class="overlay hexagon"></a>
+			<div class="details"> <span class="heading">中国品牌日500台安凯客车出口缅甸</span>
+			<hr />
+			<p>“一带一路”国际合作高峰论坛召开在即，回看“一带一路”提出的几年间，这一重要合作倡议迅速得到国际社会广泛关注与积极响应，形成了大量的新兴合作机会。</p>
+			</div>
+			  <div class="bg"></div>
+			  <div class="base"> <img src="images/2.jpg" alt="" /> </div>
+			</div>
+	  </li>
+		  <li>
+		<div class="shape"> <a href="#" class="overlay pentagon"></a>
+			<div class="details"> <span class="heading">中哈能源合作 </span>
+			<hr />
+			<p>中哈油气管道的建设和运营迎来新的历史机遇，也让两国民众实实在在享受到合作的果实。在惠及中国数亿人口的同时，中哈能源合作为哈社会经济发展和民生改善提供了强有力的支持。</p>
+			</div>
+			  <div class="bg"></div>
+			  <div class="base"> <img src="images/3.jpg" alt="" /> </div>
+			</div>
+	  </li>
+	 </ul>
+	 
+<!--	图效2-->
+	<div class="htmleaf-container">
+		<div class="slsg-header">
+            <span class="part-slsg-leftline"></span>
+            <div class="slsg-container">
+            </div>  
+            <span class="part-slsg-rightline"></span>   
+        </div>
+
+		<div class="tabs-underline">
+		    <ul>
+		            <li>
+		                <a data-index="0" href="#">探寻经济增长之道</a>
+		            </li>
+		            <li>
+		                <a class="tab-active" data-index="1" href="#">实现全球化再平衡</a>
+		            </li>
+		            <li>
+		                <a data-index="2" href="#">开创地区新型合作</a>
+		            </li>
+			</ul>
+		        <div class="tabs-content-placeholder">
+		            <div>
+		                <p>&emsp;&emsp;“一带一路”是在后金融危机时代，作为世界经济增长火车头的中国，将自身的产能优势、技术与资金优势、经验与模式优势转化为市场与合作优势，实行全方位开放的一大创新。通过“一带一路”建设共同分享中国改革发展红利、中国发展的经验和教训。中国将着力推动沿线国家间实现合作与对话，建立更加平等均衡的新型全球发展伙伴关系，夯实世界经济长期稳定发展的基础。</p>
+		                <img src="images/item-1.jpg" width="378" alt="Colosseum">
+		            </div>
+
+		            <div class="tab-content-active">
+		                <p>&emsp;&emsp;传统全球化由海而起，由海而生，沿海地区、海洋国家先发展起来，陆上国家、内地则较落后，形成巨大的贫富差距。传统全球化由欧洲开辟，由美国发扬光大，形成国际秩序的“西方中心论”，导致东方从属于西方，农村从属于城市，陆地从属于海洋等一系列不平衡不合理效应。如今，“一带一路”正在推动全球再平衡。“一带一路”鼓励向西开放，带动西部开发以及中亚、蒙古等内陆国家和地区的开发，在国际社会推行全球化的包容性发展理念；同时，“一带一路”是中国主动向西推广中国优质产能和比较优势产业，将使沿途、沿岸国家首先获益，也改变了历史上中亚等丝绸之路沿途地带只是作为东西方贸易、文化交流的过道而成为发展“洼地”的面貌。这就超越了欧洲人所开创的全球化造成的贫富差距、地区发展不平衡，推动建立持久和平、普遍安全、共同繁荣的和谐世界。</p>
+		                <img src="images/item-2.jpg" width="378" alt="Banhoff">
+		            </div>
+
+		            <div>
+		                <p>&emsp;&emsp;中国改革开放是当今世界最大的创新，“一带一路”作为全方位对外开放战略，正在以经济走廊理论、经济带理论、21世纪的国际合作理论等创新经济发展理论、区域合作理论、全球化理论。“一带一路”强调共商、共建、共享原则，超越了马歇尔计划、对外援助以及走出去战略，给21世纪的国际合作带来新的理念 比如，“经济带”概念就是对地区经济合作模式的创新，其中经济走廊——中俄蒙经济走廊、新亚欧大陆桥、中国—中亚经济走廊、孟中印缅经济走廊、中国—中南半岛经济走廊等，以经济增长极辐射周边，超越了传统发展经济学理论。</p>
+		                <img src="images/item-3.jpg" width="378" alt="Sahale Wa">
+		            </div>
+		        </div>
+		    </div>
+	</div>
+	
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script>
+        $(document).ready(function() {
+            var widget = $('.tabs-underline');
+            var tabs = widget.find('ul a'),
+                content = widget.find('.tabs-content-placeholder > div');
+            tabs.on('click', function (e) {
+                e.preventDefault();
+                var index = $(this).data('index');
+                tabs.removeClass('tab-active');
+                content.removeClass('tab-content-active');
+                $(this).addClass('tab-active');
+                content.eq(index).addClass('tab-content-active');
+            });
+        });
+    </script>
+    <!--footer 底部开始 -->
+	<div class="footer">
+		<p><a href="about.html" style="">关于我们</a></p>
+		<p>Copyright © 2017-2027. All Rights Reserved. 桂林电子科技大学第5组 版权所有</p>
+	</div>
+	<!--footer 底部结束 -->
+		</div>	
+	<div class="return">
+	<a href="javascript:scroll(0,0)"><img src="images/影响·蓝图与留言板页.png"></a>
+	</div>
+</body>
+</html>
